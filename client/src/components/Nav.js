@@ -18,7 +18,7 @@ const Nav = (props) => {
           <Menu.Item as={Link} to="/aboutme">About Me</Menu.Item>
           <Menu.Item as={Link} to="/whatido">What I Do</Menu.Item>
           <Menu.Item as={Link} to="/process">Process</Menu.Item>
-          <Menu.Item as={Link} to="/mywork">Process</Menu.Item>
+          <Menu.Item as={Link} to="/mywork">My Work</Menu.Item>
           <Menu.Item as={Link} to="/contact">Contact</Menu.Item>
         </Menu>
         <Divider />

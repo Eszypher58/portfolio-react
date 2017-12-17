@@ -14,9 +14,7 @@ import {
     Visibility,
   } from 'semantic-ui-react';
 
-  class AboutMe extends Component {
-
-    render() {
+const AboutMe = (props) => {
 
         return (
 
@@ -34,7 +32,7 @@ import {
                 <Container>
                   <Header
                     as='h1'
-                    content='Welcome'
+                    content='WELCOME'
                     inverted
                     style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '1em' }}
                   />
@@ -82,9 +80,8 @@ import {
         )
 
 
-    }
 
 
-  }
+}
 
-  export default AboutMe;
+export default AboutMe;
