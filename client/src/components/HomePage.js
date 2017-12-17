@@ -1,40 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react';
 import {
-  Button,
+  //Button,
   Container,
-  Divider,
+  //Divider,
   Grid,
   Header,
   Icon,
-  Image,
-  List,
-  Menu,
+  //Image,
+  //List,
+  //Menu,
   Segment,
-  Visibility,
+  //Visibility,
 } from 'semantic-ui-react'
+import NavContainer from '../containers/NavContainer';
 
-const FixedMenu = () => (
-  <Menu fixed='top' size='large'>
-    <Container>
-      <Menu.Item as='a' active>Home</Menu.Item>
-      <Menu.Item as='a'>Work</Menu.Item>
-      <Menu.Item as='a'>Company</Menu.Item>
-      <Menu.Item as='a'>Careers</Menu.Item>
-      <Menu.Menu position='right'>
-        <Menu.Item className='item'>
-          <Button as='a'>Log in</Button>
-        </Menu.Item>
-        <Menu.Item>
-          <Button as='a' primary>Sign Up</Button>
-        </Menu.Item>
-      </Menu.Menu>
-    </Container>
-  </Menu>
-)
-
-class HomePage extends Component {
-
-    render() {
+const HomePage = (props) => {
 
         return (
 
@@ -47,17 +27,7 @@ class HomePage extends Component {
                 vertical
                 >
 
-                <Container fluid>
-                  <Menu inverted pointing secondary style={{ border:'0px' }} size='large'>
-                    <Menu.Item header>Hao.Vision</Menu.Item>
-                    <Menu.Item position='right' as='a' active>Home</Menu.Item>
-                    <Menu.Item as='a'>About Me</Menu.Item>
-                    <Menu.Item as='a'>What I Do</Menu.Item>
-                    <Menu.Item as='a'>Process</Menu.Item>
-                    <Menu.Item as='a'>Contact</Menu.Item>
-                  </Menu>
-                  <Divider />
-                </Container>
+                <NavContainer />
 
                 <Container text>
                   <Header
@@ -98,9 +68,6 @@ class HomePage extends Component {
             </div>
 
         )
-
-    }
-
 
 }
 
