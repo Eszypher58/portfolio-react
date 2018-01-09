@@ -32,7 +32,7 @@ const WhatIDo = (props) => {
                 <Segment
                 
                 textAlign='center'
-                style={{ minHeight: window.screenY, padding: '1em 0em', backgroundColor: '#00ACC1'}}
+                style={{ minHeight: document.body.clientHeight, padding: '1em 0em', backgroundColor: '#00ACC1'}}
                 vertical
                 >
 
