@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import NavContainer from '../containers/NavContainer';
-import HtmlImg from '../static/img/col-html.png';
-import CssImg from '../static/img/col-css.png';
-import JavaScriptImg from '../static/img/col-js.png';
-//import BootstrapImg from '../static/img/col-js.png';
-import JqueryImg from '../static/img/col-jquery.png';
-import NodeImg from '../static/img/col-node.png';
-import ReactImg from '../static/img/col-react.png';
-import DatabaseImg from '../static/img/col-database.png';
-import PythonImg from '../static/img/col-python.png';
+import PlanImg from '../static/img/planning.png'
+import BuildImg from '../static/img/build.png'
+import TestImg from '../static/img/test.png'
+import DeployImg from '../static/img/deploy.png'
 import {
     Button,
     Container,
@@ -32,7 +27,7 @@ const Process = (props) => {
                 <Segment
                 
                 textAlign='center'
-                style={{ minHeight: window.screenY, padding: '1em 0em', backgroundColor: '#00ACC1'}}
+                style={{ minHeight: document.body.clientHeight, padding: '1em 0em', backgroundColor: '#00ACC1'}}
                 vertical
                 >
 
@@ -54,22 +49,54 @@ const Process = (props) => {
                     <Grid.Row>
                         <Grid.Column style={{ paddingBottom: '0.5em', paddingTop: '0.5em' }}>
                             <Container>
-                            <Header as='h3' style={{ fontSize: '2em' }}>PLAN</Header>
+                            <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Icon name='edit' style={{ fontSize: '2em' }} />PLAN
+                            </Header>
+                            <Image
+                                bordered
+                                rounded 
+                                fluid
+                                src={PlanImg}
+                            />
                             </Container>
                         </Grid.Column>
                         <Grid.Column style={{ paddingBottom: '0.5em', paddingTop: '0.5em' }}>
                         <Container>
-                        <Header as='h3' style={{ fontSize: '2em' }}>BUILD</Header>
+                        <Header as='h3' style={{ fontSize: '2em' }}>
+                            <Icon name='code' style={{ fontSize: '2em' }} />BUILD
+                        </Header>
+                        <Image
+                                bordered
+                                rounded 
+                                fluid
+                                src={BuildImg}
+                            />
                         </Container>
                         </Grid.Column>
                         <Grid.Column style={{ paddingBottom: '0.5em', paddingTop: '0.5em' }}>
                         <Container>
-                            <Header as='h3' style={{ fontSize: '2em' }}>TEST</Header>
+                            <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Icon name='checkmark' style={{ fontSize: '2em' }} />TEST
+                            </Header>
+                            <Image
+                                bordered
+                                rounded 
+                                fluid
+                                src={TestImg}
+                            />
                             </Container>
                         </Grid.Column>
                         <Grid.Column style={{ paddingBottom: '0.5em', paddingTop: '0.5em' }}>
                         <Container>
-                            <Header as='h3' style={{ fontSize: '2em' }}>DEPLOY</Header>
+                            <Header as='h3' style={{ fontSize: '2em' }}>
+                                <Icon name='could upload' style={{ fontSize: '2em' }} />DEPLOY
+                            </Header>
+                            <Image
+                                bordered
+                                rounded 
+                                fluid
+                                src={DeployImg}
+                            />
                             </Container>
                         </Grid.Column>
                     </Grid.Row>

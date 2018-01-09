@@ -48,21 +48,6 @@ const HomePage = (props) => {
 
             </Container>
 
-            <Segment style={{ padding: '5em' }} vertical>
-              <Grid celled='internally' columns='equal' stackable>
-                <Grid.Row textAlign='center'>
-                  <Grid.Column style={{ paddingBottom: '0em', paddingTop: '0em' }}>
-                    <Icon name='angle double left' style={{ fontSize: '2em' }} />
-                      <p style={{ fontSize: '1.33em' }}>BACK</p>
-                  </Grid.Column>
-                  <Grid.Column style={{ paddingBottom: '0em', paddingTop: '0em' }}>
-                  <Icon name='angle double right' style={{ fontSize: '2em' }} />
-                  <p style={{ fontSize: '1.33em' }}>FORWARD</p>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Segment>
-
           </Segment>
             
             </div>

@@ -4,6 +4,8 @@ import HomePageContainer from "./containers/HomePageContainer";
 import AboutMeContainer from './containers/AboutMeContainer';
 import WhatIDoContainer from './containers/WhatIDoContainer';
 import ProcessContainer from './containers/ProcessContainer';
+import MyWorkContainer from './containers/MyWorkContainer';
+import ContactContainer from './containers/ContactContainer';
 import './App.css';
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
           <Route exact path="/aboutme" component={AboutMeContainer} />
           <Route exact path="/whatido" component={WhatIDoContainer} />
           <Route exact path="/process" component={ProcessContainer} />
+          <Route exact path="/mywork" component={MyWorkContainer} />
+          <Route exact path="/connect" component={ContactContainer} />
           </Switch>
         </Router>
 
